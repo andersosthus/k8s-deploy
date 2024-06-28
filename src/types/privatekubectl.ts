@@ -57,7 +57,7 @@ export class PrivateKubectl extends Kubectl {
             if (!file) {
                continue
             }
-            this.moveFileToTempManifestDir(file)
+            this.moveFileToTempManifestDir(path.basename(file))
          }
       }
 
